@@ -1,0 +1,10 @@
+*.html
+*.yml
+*.md
+*.txt
+
+.env
+bundles
+
+package-lock.json
+jsconfig.json
