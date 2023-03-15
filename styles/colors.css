@@ -1,0 +1,18 @@
+:root,
+::before,
+::after {
+    --color-dark-50: #1a1a1a;
+    --color-dark-40: #2b2b2b;
+    --color-dark-30: #464646;
+    --color-dark-20: #8A9594;
+    --color-white-100: #ffffff;
+    --color-white-90: #fafafa;
+    --color-green-60: #3ab1aa;
+    --color-green-50: #3aa09a;
+    --color-green-40: #3c9590;
+
+    --color-dark-50-shadow-30: rgba(26, 26, 26, 0.3);
+    --color-dark-50-shadow-10: rgba(26, 26, 26, 0.1);
+    --color-dark-20-shadow-20: rgba(138, 149, 148, 0.2);
+    --color-white-100-shadow-60: rgba(255, 255, 255, 0.6);
+}

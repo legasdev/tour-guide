@@ -1,12 +1,12 @@
 import { PageHead } from "@components/common";
-import { FirstScreen } from "@components/shared";
+import { PromoScreen } from "@components/shared";
 
 function Home() {
   return (
     <>
       <PageHead />
       <>
-        <FirstScreen />
+        <PromoScreen />
       </>
     </>
   );

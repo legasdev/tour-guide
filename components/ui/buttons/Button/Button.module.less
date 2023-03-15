@@ -1,0 +1,34 @@
+.main {
+  min-width: 200px;
+  padding: 10px 1rem;
+  background-color: var(--color-green-50);
+  border: none;
+  border-radius: var(--border-radius);
+  transition-duration: var(--animate-duration);
+  transition-property: background-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: var(--color-white-100);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-green-60);
+  }
+
+  &:active {
+    background-color: var(--color-green-40);
+  }
+
+  &__translate {
+    font-weight: 300;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}

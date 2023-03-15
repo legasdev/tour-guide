@@ -1,3 +1,3 @@
-import { FirstScreen } from "./FirstScreen";
+import { PromoScreen } from "./PromoScreen";
 
-export { FirstScreen };
+export { PromoScreen };
