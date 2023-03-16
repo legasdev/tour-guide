@@ -4,14 +4,15 @@
   background-color: var(--color-green-50);
   border: none;
   border-radius: var(--border-radius);
-  transition-duration: var(--animate-duration);
-  transition-property: background-color;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.375rem;
   color: var(--color-white-100);
+  box-shadow: 0 4px 14px var(--color-dark-50-shadow-30);
   cursor: pointer;
+  transition-duration: var(--animate-duration);
+  transition-property: background-color, box-shadow;
 
   &:hover {
     background-color: var(--color-green-60);
@@ -21,7 +22,27 @@
     background-color: var(--color-green-40);
   }
 
-  &__translate {
+  // Themes
+
+  &__white {
+    background-color: var(--color-white-100);
+    box-shadow: 0 4px 14px var(--color-dark-50-shadow-10);
+    color: var(--color-dark-30);
+
+    &:hover {
+      background-color: var(--color-white-100);
+      box-shadow: 0 6px 20px var(--color-dark-50-shadow-10);
+    }
+
+    &:active {
+      background-color: var(--color-white-100);
+      box-shadow: 0 4px 14px var(--color-dark-50-shadow-10);
+    }
+  }
+
+  //
+
+  &__withTranslate {
     font-weight: 300;
   }
 }

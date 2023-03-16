@@ -1,3 +1,3 @@
-import { PromoScreen } from "./PromoScreen";
-
-export { PromoScreen };
+export { PromoScreen } from "./PromoScreen";
+export { ImageScreen } from "./ImageScreen";
+export { PageWrapper } from "./PageWrapper";

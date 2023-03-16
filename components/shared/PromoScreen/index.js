@@ -1,3 +1,1 @@
-import PromoScreen from "./PromoScreen";
-
-export { PromoScreen };
+export { default as PromoScreen } from "./PromoScreen";

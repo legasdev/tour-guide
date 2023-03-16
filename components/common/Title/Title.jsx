@@ -13,8 +13,11 @@ import {
 function Title({ translate, size = TITLE_SIZES.h1, className, children }) {
   const TitleComponent = TITLE_BY_SIZE[size];
 
-  const titleStyles = clsx(className, CLASS_NAME_BY_SIZE[size]);
-  const titleTranslateStyles = clsx(TRANSLATE_CLASS_NAME_BY_SIZE[size]);
+  const titleStyles = clsx(styles.main, className, CLASS_NAME_BY_SIZE[size]);
+  const titleTranslateStyles = clsx(
+    styles.main,
+    TRANSLATE_CLASS_NAME_BY_SIZE[size]
+  );
 
   if (!translate) {
     return <TitleComponent className={titleStyles}>{children}</TitleComponent>;
