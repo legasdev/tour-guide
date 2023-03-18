@@ -1,3 +1,1 @@
-import PageHeadFavicons from "./PageHeadFavicons";
-
-export { PageHeadFavicons };
+export { default as PageHeadFavicons } from "./PageHeadFavicons";

@@ -1,4 +1,3 @@
-import { PageHead } from "./PageHead";
-import { Title } from "./Title";
-
-export { PageHead, Title };
+export { PageHead } from "./PageHead";
+export { Title } from "./Title";
+export { BlurBlock } from "./BlurBlock";

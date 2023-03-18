@@ -1,11 +1,6 @@
-import { TITLE_SIZES } from "./sizes";
-import { TITLE_BY_SIZE } from "./titleBySize";
-import { CLASS_NAME_BY_SIZE } from "./classNameBySize";
-import { TRANSLATE_CLASS_NAME_BY_SIZE } from "./translateClassNameBySize";
-
-export {
-  TITLE_SIZES,
-  TITLE_BY_SIZE,
-  CLASS_NAME_BY_SIZE,
-  TRANSLATE_CLASS_NAME_BY_SIZE,
-};
+export { TITLE_SIZES } from "./sizes";
+export { TITLE_COLORS } from "./colors";
+export { TITLE_BY_SIZE } from "./titleBySize";
+export { CLASS_NAME_BY_SIZE } from "./classNameBySize";
+export { CLASS_NAME_BY_COLOR } from "./classNameByColor";
+export { TRANSLATE_CLASS_NAME_BY_SIZE } from "./translateClassNameBySize";

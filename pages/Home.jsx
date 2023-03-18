@@ -1,15 +1,15 @@
-const guideSystemScreenImage = "images/home/guide-system.jpg";
-
 import { PageHead } from "@components/common";
-import { PromoScreen, ImageScreen, PageWrapper } from "@components/shared";
+import { Header, PageWrapper } from "@components/shared";
+import { PromoScreen, DevicesSystemScreen } from "@components/screens/home";
 
 function Home() {
   return (
     <>
       <PageHead />
+      <Header />
       <PageWrapper>
         <PromoScreen />
-        <ImageScreen image={guideSystemScreenImage}>Screen</ImageScreen>
+        <DevicesSystemScreen />
       </PageWrapper>
     </>
   );

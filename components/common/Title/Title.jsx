@@ -7,15 +7,29 @@ import {
   CLASS_NAME_BY_SIZE,
   TITLE_BY_SIZE,
   TITLE_SIZES,
+  TITLE_COLORS,
+  CLASS_NAME_BY_COLOR,
   TRANSLATE_CLASS_NAME_BY_SIZE,
 } from "./constants";
 
-function Title({ translate, size = TITLE_SIZES.h1, className, children }) {
+function Title({
+  translate,
+  size = TITLE_SIZES.h1,
+  color = TITLE_COLORS.black,
+  className,
+  children,
+}) {
   const TitleComponent = TITLE_BY_SIZE[size];
 
-  const titleStyles = clsx(styles.main, className, CLASS_NAME_BY_SIZE[size]);
+  const titleStyles = clsx(
+    styles.main,
+    !translate && className,
+    CLASS_NAME_BY_SIZE[size],
+    CLASS_NAME_BY_COLOR[color]
+  );
   const titleTranslateStyles = clsx(
     styles.main,
+    CLASS_NAME_BY_COLOR[color],
     TRANSLATE_CLASS_NAME_BY_SIZE[size]
   );
 
@@ -23,8 +37,10 @@ function Title({ translate, size = TITLE_SIZES.h1, className, children }) {
     return <TitleComponent className={titleStyles}>{children}</TitleComponent>;
   }
 
+  const wrapperStyles = clsx(styles.wrapper, className);
+
   return (
-    <div className={styles.wrapper}>
+    <div className={wrapperStyles}>
       <TitleComponent className={titleStyles}>{children}</TitleComponent>
       <span className={titleTranslateStyles}>{translate}</span>
     </div>
@@ -32,9 +48,11 @@ function Title({ translate, size = TITLE_SIZES.h1, className, children }) {
 }
 
 Title.sizes = TITLE_SIZES;
+Title.colors = TITLE_COLORS;
 
 Title.propTypes = {
   size: PropTypes.symbol,
+  color: PropTypes.symbol,
   className: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.node,
