@@ -5,7 +5,7 @@
 *::before {
     --animate-duration: .1s;
     --border-radius: 0.25rem;
-    --blur: 10px;
+    --blur-size: 0.5rem;
 
     margin: 0;
     padding: 0;

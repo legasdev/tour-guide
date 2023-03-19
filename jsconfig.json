@@ -6,6 +6,7 @@
       "@styles/*": ["styles/*"],
       "@settings/*": ["settings/*"],
       "@pages/*": ["pages/*"],
+      "@constants/*": ["constants/*"],
       "@images/*": ["public/images/*"]
     }
   },
