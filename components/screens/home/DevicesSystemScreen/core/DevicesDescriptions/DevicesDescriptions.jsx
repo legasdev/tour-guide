@@ -3,7 +3,7 @@ import styles from "./DevicesDescriptions.module.less";
 function DevicesDescriptions() {
   return (
     <div className={styles.main}>
-      <p>
+      <p className={styles.text}>
         [En] Our headphones for guides are designed to provide an exceptional
         audio experience for your tour guests. They are lightweight, comfortable
         to wear, and have noise-cancelling capabilities to eliminate any
@@ -13,7 +13,7 @@ function DevicesDescriptions() {
         frequent use in various environments. They are the perfect tool to
         enhance your guests' experience while on your tour.
       </p>
-      <p>
+      <p className={styles.text}>
         [Sr] Наше слушалице за водиче су дизајниране да пруже изузетно аудио
         искуство за ваше госте на турнеји. Лагани су, удобни за ношење и имају
         способност поништавања буке како би елиминисали било какву позадину. Са
