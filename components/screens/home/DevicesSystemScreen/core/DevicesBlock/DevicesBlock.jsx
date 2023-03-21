@@ -1,19 +1,33 @@
 import styles from "./DevicesBlock.module.less";
 
-const transmitterImage = "images/home/transmitter.png";
+import { BlurBlock, Title } from "@components/common";
 
-import { BlurBlock } from "@components/common";
+import { DEVICES_LIST } from "./constants";
 
 function DevicesBlock() {
   return (
     <div className={styles.main}>
-      <BlurBlock className={styles.transmitter}>
-        <img className={styles.image} src={transmitterImage} alt="" />
-      </BlurBlock>
-      <BlurBlock className={styles.receiver}>Block 2</BlurBlock>
-      <BlurBlock className={styles.headphones}>Block 3</BlurBlock>
-      <BlurBlock className={styles.microphones}>Block 4</BlurBlock>
-      <BlurBlock className={styles.case}>Block 5</BlurBlock>
+      {DEVICES_LIST.map(
+        ({
+          id,
+          image,
+          label,
+          labelTranslate,
+          description,
+          descriptionTranslate,
+        }) => (
+          <BlurBlock className={styles[id]}>
+            <img className={styles.image} src={image} alt="" />
+            <Title size={Title.sizes.h3} translate={labelTranslate}>
+              {label}
+            </Title>
+            <div className={styles.description}>
+              <p>{description}</p>
+              <p>{descriptionTranslate}</p>
+            </div>
+          </BlurBlock>
+        )
+      )}
     </div>
   );
 }

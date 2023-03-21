@@ -4,9 +4,9 @@ import styles from "./ImageScreen.module.less";
 
 import { ImageScreenHeader } from "./core";
 
-function ImageScreen({ title, translate, image, children }) {
+function ImageScreen({ id, title, translate, image, children }) {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id={id}>
       <ImageScreenHeader title={title} translate={translate} image={image} />
       <div className={styles.wrapper}>{children}</div>
     </div>

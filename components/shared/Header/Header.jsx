@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import styles from "./Header.module.less";
 
 const logoImage = "images/logo/logo.svg";
@@ -10,9 +8,9 @@ function Header() {
   return (
     <header className={styles.main}>
       <div className={styles.wrapper}>
-        <Link href="/">
+        <a href="/#">
           <img src={logoImage} alt="" />
-        </Link>
+        </a>
         <HeaderNavigation />
       </div>
     </header>

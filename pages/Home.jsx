@@ -1,6 +1,13 @@
 import { PageHead } from "@components/common";
-import { Header, PageWrapper } from "@components/shared";
-import { PromoScreen, DevicesSystemScreen } from "@components/screens/home";
+import { Footer, Header, PageWrapper } from "@components/shared";
+import {
+  PromoScreen,
+  DevicesSystemScreen,
+  DevicesScreen,
+  ConferenceScreen,
+  MultilingualToursScreen,
+  ContactsScreen,
+} from "@components/screens/home";
 
 function Home() {
   return (
@@ -10,7 +17,12 @@ function Home() {
       <PageWrapper>
         <PromoScreen />
         <DevicesSystemScreen />
+        <DevicesScreen />
+        <ConferenceScreen />
+        <MultilingualToursScreen />
+        <ContactsScreen />
       </PageWrapper>
+      <Footer />
     </>
   );
 }

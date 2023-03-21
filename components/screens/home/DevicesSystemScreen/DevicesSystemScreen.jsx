@@ -9,6 +9,7 @@ import { DevicesBlock, DevicesDescriptions } from "./core";
 function DevicesSystemScreen() {
   return (
     <ImageScreen
+      id="guide-system"
       title="Collect Your System to a Better Experience."
       translate="Сакупите свој систем за боље искуство."
       image={guideSystemScreenImage}

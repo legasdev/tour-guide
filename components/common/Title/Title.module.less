@@ -24,7 +24,7 @@
 
     &_translate {
       width: 87%;
-      margin-top: 1.5rem;
+      margin-top: 1rem;
       font-weight: 500;
       font-size: 2.625rem;
       line-height: 3.25rem;
@@ -32,10 +32,27 @@
     }
   }
 
+  &__h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+    color: var(--color-dark-30);
+
+    &_translate {
+      margin-top: 0.5rem;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 1.813rem;
+      color: var(--color-dark-30);
+    }
+  }
+
   // Colors
 
   &__white,
-  &__white&__h2 {
+  &__white&__h2,
+  &__white&__h3 {
     color: var(--color-white-100);
   }
 }

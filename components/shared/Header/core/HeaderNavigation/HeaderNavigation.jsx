@@ -13,7 +13,7 @@ function HeaderNavigation() {
 
           return (
             <li className={styles.navigateItem} key={id}>
-              <Link className={styles.navigateLink} href={route}>
+              <Link className={styles.navigateLink} href={route} scroll={false}>
                 <span>{label}</span>
                 <span className={styles.navigateLink__translate}>
                   {translate}
