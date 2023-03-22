@@ -13,6 +13,7 @@ function DeviceInformation({
   return (
     <div className={styles.main}>
       <DeviceHeader label={label} labelTranslate={labelTranslate} />
+      <div>Block</div>
     </div>
   );
 }
