@@ -16,7 +16,7 @@ function DevicesBlock() {
           description,
           descriptionTranslate,
         }) => (
-          <BlurBlock className={styles[id]}>
+          <BlurBlock key={id} className={styles[id]}>
             <img className={styles.image} src={image} alt="" />
             <Title size={Title.sizes.h3} translate={labelTranslate}>
               {label}

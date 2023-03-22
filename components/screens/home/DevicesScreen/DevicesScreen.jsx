@@ -2,6 +2,9 @@ import styles from "./DevicesScreen.module.less";
 
 import { PageBlock } from "@components/shared";
 
+import { DEVICES } from "./constants";
+import DeviceInformation from "./core/DeviceInformation/DeviceInformation";
+
 function DevicesScreen() {
   return (
     <PageBlock
@@ -11,7 +14,11 @@ function DevicesScreen() {
       theme={PageBlock.themes.grey}
       className={styles.main}
     >
-      <div>Text</div>
+      <div className={styles.content}>
+        {DEVICES.map((device) => {
+          return <DeviceInformation key={device.id} {...device} />;
+        })}
+      </div>
     </PageBlock>
   );
 }
