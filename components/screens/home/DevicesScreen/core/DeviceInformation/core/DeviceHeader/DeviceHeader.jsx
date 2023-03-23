@@ -37,7 +37,10 @@ function DeviceHeader({
 DeviceHeader.propTypes = {
   label: PropTypes.string,
   labelTranslate: PropTypes.string,
-  variantsRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  variantsRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.arrayOf(PropTypes.object) }),
+  ]),
   deviceModel: PropTypes.string,
   handleDeviceSelectChanged: PropTypes.func,
 };
