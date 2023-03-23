@@ -1,4 +1,4 @@
-import styles from "./DevicesSystemScreen.module.less";
+import styles from "./SystemScreen.module.less";
 
 const guideSystemScreenImage = "images/home/guide-system.jpg";
 
@@ -6,7 +6,7 @@ import { ImageScreen } from "@components/shared";
 
 import { DevicesBlock, DevicesDescriptions } from "./core";
 
-function DevicesSystemScreen() {
+function SystemScreen() {
   return (
     <ImageScreen
       id="guide-system"
@@ -22,4 +22,4 @@ function DevicesSystemScreen() {
   );
 }
 
-export default DevicesSystemScreen;
+export default SystemScreen;

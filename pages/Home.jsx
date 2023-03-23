@@ -2,7 +2,7 @@ import { PageHead } from "@components/common";
 import { Footer, Header, PageWrapper } from "@components/shared";
 import {
   PromoScreen,
-  DevicesSystemScreen,
+  SystemScreen,
   DevicesScreen,
   ConferenceScreen,
   MultilingualToursScreen,
@@ -16,7 +16,7 @@ function Home() {
       <Header />
       <PageWrapper>
         <PromoScreen />
-        <DevicesSystemScreen />
+        <SystemScreen />
         <DevicesScreen />
         <ConferenceScreen />
         <MultilingualToursScreen />

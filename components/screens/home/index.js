@@ -1,5 +1,5 @@
 export { PromoScreen } from "./PromoScreen";
-export { DevicesSystemScreen } from "./DevicesSystemScreen";
+export { SystemScreen } from "./SystemScreen";
 export { DevicesScreen } from "./DevicesScreen";
 export { ConferenceScreen } from "./ConferenceScreen";
 export { MultilingualToursScreen } from "./MultilingualToursScreen";
