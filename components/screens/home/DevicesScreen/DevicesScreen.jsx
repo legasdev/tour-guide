@@ -3,7 +3,7 @@ import styles from "./DevicesScreen.module.less";
 import { PageBlock } from "@components/shared";
 
 import { DEVICES } from "./constants";
-import DeviceInformation from "./core/DeviceInformation/DeviceInformation";
+import { Device } from "./core";
 
 function DevicesScreen() {
   return (
@@ -16,7 +16,7 @@ function DevicesScreen() {
     >
       <div className={styles.content}>
         {DEVICES.map((device) => {
-          return <DeviceInformation key={device.id} {...device} />;
+          return <Device key={device.id} {...device} />;
         })}
       </div>
     </PageBlock>

@@ -1,12 +1,12 @@
 import { useMemo, useRef, useState } from "react";
 import PropTypes from "prop-types";
 
-import styles from "./DeviceInformation.module.less";
+import styles from "./Device.module.less";
 
 import { DeviceHeader, DeviceBlock } from "./core";
 import { getDeviceByVariant, getDeviceVariantsForSelect } from "./utils";
 
-function DeviceInformation({ id, image, label, labelTranslate, variants }) {
+function Device({ id, image, label, labelTranslate, variants }) {
   const variantsForSelect = useRef(getDeviceVariantsForSelect(variants));
   const [deviceModel, setDeviceModel] = useState(
     variantsForSelect.current[0].id
@@ -27,12 +27,12 @@ function DeviceInformation({ id, image, label, labelTranslate, variants }) {
         deviceModel={deviceModel}
         handleDeviceSelectChanged={handleDeviceSelectChanged}
       />
-      <DeviceBlock variant={deviceVariant} />
+      <DeviceBlock deviceVariant={deviceVariant} />
     </div>
   );
 }
 
-DeviceInformation.propTypes = {
+Device.propTypes = {
   id: PropTypes.string,
   image: PropTypes.string,
   label: PropTypes.string,
@@ -40,4 +40,4 @@ DeviceInformation.propTypes = {
   variants: PropTypes.arrayOf(PropTypes.object),
 };
 
-export default DeviceInformation;
+export default Device;
