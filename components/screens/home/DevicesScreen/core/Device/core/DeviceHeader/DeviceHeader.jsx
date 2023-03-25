@@ -3,6 +3,8 @@ import clsx from "clsx";
 
 import styles from "./DeviceHeader.module.less";
 
+import { Select } from "@components/ui/interactions";
+
 function DeviceHeader({
   label,
   labelTranslate,
@@ -22,13 +24,13 @@ function DeviceHeader({
         <span className={labelTranslateStyles}>{labelTranslate}</span>
       </div>
       <div className={styles.header_select}>
-        <select value={deviceModel} onChange={handleDeviceSelectChanged}>
+        <Select value={deviceModel} onChange={handleDeviceSelectChanged}>
           {variantsRef.current.map(({ id, label }) => (
-            <option key={id} value={id}>
+            <Select.Option key={id} value={id}>
               {label}
-            </option>
+            </Select.Option>
           ))}
-        </select>
+        </Select>
       </div>
     </header>
   );

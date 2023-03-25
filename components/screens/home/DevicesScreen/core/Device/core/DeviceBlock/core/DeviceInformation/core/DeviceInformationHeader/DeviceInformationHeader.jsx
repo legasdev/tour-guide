@@ -2,6 +2,8 @@ import clsx from "clsx";
 
 import styles from "./DeviceInformationHeader.module.less";
 
+import { KEY_CODES } from "@constants/keyCodes";
+
 import { DEVICE_INFORMATION_TABS as TABS } from "../../constants";
 
 function DeviceInformationHeader({
@@ -11,6 +13,18 @@ function DeviceInformationHeader({
 }) {
   function handleChangeSelection(event) {
     setSelectInformation(event.target.value);
+  }
+
+  function handleKeyDown(event) {
+    if (
+      event.keyCode !== KEY_CODES.space.keyCode &&
+      event.keyCode !== KEY_CODES.enter.keyCode
+    ) {
+      return;
+    }
+
+    event.preventDefault();
+    setSelectInformation(event.target.dataset.value);
   }
 
   return (
@@ -28,7 +42,12 @@ function DeviceInformationHeader({
         );
 
         return (
-          <label key={id}>
+          <label
+            key={id}
+            tabIndex="0"
+            data-value={id}
+            onKeyDown={handleKeyDown}
+          >
             <input
               type="radio"
               name={`${deviceId}-${id}`}
