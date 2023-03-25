@@ -1,0 +1,36 @@
+.main {
+  margin-top: 1.5rem;
+}
+
+.description {
+  & > * + * {
+    margin-top: 2rem;
+  }
+
+  &_text {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: var(--color-dark-30);
+
+    & + & {
+      margin-top: 0.75rem;
+    }
+  }
+
+  &_lang {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.063rem;
+    color: var(--color-dark-20);
+    margin-bottom: 1rem;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.188rem;
+}

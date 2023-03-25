@@ -4,9 +4,15 @@
   width: 100%;
   flex-grow: 1;
   padding: 1.125rem 2.938rem 0 0;
+
+  @media screen and (max-width: 991px) {
+    padding: 0;
+  }
 }
 
 .image {
+  position: sticky;
+  top: 4.375rem;
   width: 100%;
   max-width: 15rem;
   mix-blend-mode: darken;

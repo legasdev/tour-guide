@@ -1,4 +1,8 @@
-import { DEVICE_INFORMATION_TABS as TABS } from "./constants";
+import clsx from "clsx";
+
+import styles from "./DeviceInformationHeader.module.less";
+
+import { DEVICE_INFORMATION_TABS as TABS } from "../../constants";
 
 function DeviceInformationHeader({
   deviceId,
@@ -10,26 +14,36 @@ function DeviceInformationHeader({
   }
 
   return (
-    <header>
+    <header className={styles.main}>
       {TABS.map(({ id, label, labelTranslate }) => {
+        const checked = selectedInformation === id;
+        const labelStyles = clsx(
+          styles.label,
+          checked && styles.label__checked
+        );
+        const translateLabelStyles = clsx(
+          styles.label,
+          styles.label__translate,
+          checked && styles.label__checked
+        );
+
         return (
           <label key={id}>
             <input
               type="radio"
               name={`${deviceId}-${id}`}
               value={id}
-              checked={selectedInformation === id}
+              checked={checked}
               onChange={handleChangeSelection}
+              className={styles.input}
             />
-            <span>{label}</span>
-            <span>{labelTranslate}</span>
+            <span className={labelStyles}>{label}</span>
+            <span className={translateLabelStyles}>{labelTranslate}</span>
           </label>
         );
       })}
     </header>
   );
 }
-
-DeviceInformationHeader.tabs = TABS;
 
 export default DeviceInformationHeader;

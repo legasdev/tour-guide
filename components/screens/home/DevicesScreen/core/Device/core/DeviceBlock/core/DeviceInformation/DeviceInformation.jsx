@@ -3,12 +3,11 @@ import PropTypes from "prop-types";
 
 import styles from "./DeviceInformation.module.less";
 
-import { DeviceInformationHeader } from "./core";
+import { DEVICE_INFORMATION_TABS as TABS } from "./constants";
+import { DeviceInformationHeader, DeviceInformationBlock } from "./core";
 
 function DeviceInformation({ device }) {
-  const [selectedInformation, setSelectInformation] = useState(
-    DeviceInformationHeader.tabs[0].id
-  );
+  const [selectedInformation, setSelectInformation] = useState(TABS[0].id);
 
   return (
     <div className={styles.main}>
@@ -16,6 +15,12 @@ function DeviceInformation({ device }) {
         deviceId={device.id}
         selectedInformation={selectedInformation}
         setSelectInformation={setSelectInformation}
+      />
+      <DeviceInformationBlock
+        selectedInformation={selectedInformation}
+        description={device.description}
+        descriptionTranslate={device.descriptionTranslate}
+        specifications={device.specifications}
       />
     </div>
   );
