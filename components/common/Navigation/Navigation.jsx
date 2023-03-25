@@ -1,13 +1,20 @@
+import PropTypes from "prop-types";
+import clsx from "clsx";
 import Link from "next/link";
 
-import styles from "./HeaderNavigation.module.less";
+import styles from "./Navigation.module.less";
 
 import { ROUTES } from "@constants/routes";
 
-function HeaderNavigation() {
+function Navigation({ withMobile = false }) {
+  const navigationStyles = clsx(
+    styles.main,
+    withMobile && styles.main__withMobile
+  );
+
   return (
     <nav>
-      <ul className={styles.main}>
+      <ul className={navigationStyles}>
         {ROUTES.filter((_, index) => index !== 0).map((navigateObject) => {
           const { id, route, label, translate } = navigateObject;
 
@@ -27,4 +34,8 @@ function HeaderNavigation() {
   );
 }
 
-export default HeaderNavigation;
+Navigation.propTypes = {
+  withMobile: PropTypes.bool,
+};
+
+export default Navigation;

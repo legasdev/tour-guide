@@ -1,8 +1,8 @@
 import styles from "./Header.module.less";
 
-const logoImage = "images/logo/logo.svg";
+import { Navigation } from "@components/common";
 
-import { HeaderNavigation } from "./core";
+const logoImage = "images/logo/logo.svg";
 
 function Header() {
   return (
@@ -11,7 +11,7 @@ function Header() {
         <a href="/#">
           <img src={logoImage} alt="" />
         </a>
-        <HeaderNavigation />
+        <Navigation withMobile />
       </div>
     </header>
   );
