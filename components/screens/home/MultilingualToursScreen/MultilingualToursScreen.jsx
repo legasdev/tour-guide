@@ -5,6 +5,7 @@ const articleImage = "images/home/translation.jpg";
 
 import { Article, ImageScreen } from "@components/shared";
 import { BlurBlock } from "@components/common";
+import DevicesKit from "../../../shared/DevicesKit/DevicesKit";
 
 function MultilingualToursScreen() {
   return (
@@ -32,6 +33,10 @@ function MultilingualToursScreen() {
               "Подешавање је једноставно, а наш систем је компатибилан са широким спектром уређаја и платформи, што га чини доступним свима. Са нашим системом, можете се усредсредити на своје дискусије без бриге о техничким потешкоћама или лошем квалитету звука."}
           </Article.Paragraph>
         </Article>
+        <DevicesKit
+          title="Recommended Set for Multilingual Tours."
+          titleTranslate="Препоручени сет за вишејезичне туре."
+        />
       </BlurBlock>
     </ImageScreen>
   );
