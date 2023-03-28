@@ -1,1 +1,0 @@
-export { PageHeadFavicons } from "./PageHeadFavicons";

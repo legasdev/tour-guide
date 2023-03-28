@@ -1,0 +1,67 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin-top: 2rem;
+}
+
+.headphones {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.microphones {
+  grid-area: 1 / 4 / 2 / 7;
+}
+
+.transmitter {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.receiver {
+  grid-area: 2 / 3 / 3 / 5;
+}
+
+.case {
+  grid-area: 2 / 5 / 3 / 7;
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .headphones {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .microphones {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .transmitter {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .receiver {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .case {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @supports not (row-gap: 1.5rem) {
+      & > * + * {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
