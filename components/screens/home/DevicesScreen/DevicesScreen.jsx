@@ -1,8 +1,8 @@
 import styles from "./DevicesScreen.module.less";
 
+import { DEVICES } from "@constants/devices";
 import { PageBlock } from "@components/shared";
 
-import { DEVICES } from "./constants";
 import { Device } from "./core";
 
 function DevicesScreen() {

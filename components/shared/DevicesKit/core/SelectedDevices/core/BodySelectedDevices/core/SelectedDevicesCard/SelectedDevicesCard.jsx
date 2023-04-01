@@ -26,11 +26,11 @@ function SelectedDevicesCard({
 }
 
 SelectedDevicesCard.propTypes = {
-  image: PropTypes,
-  title: PropTypes,
-  titleTranslate: PropTypes,
-  modelName: PropTypes,
-  className: PropTypes,
+  image: PropTypes.string,
+  title: PropTypes.string,
+  titleTranslate: PropTypes.string,
+  modelName: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default SelectedDevicesCard;

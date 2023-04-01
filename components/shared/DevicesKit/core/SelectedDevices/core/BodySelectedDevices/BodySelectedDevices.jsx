@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import styles from "./BodySelectedDevices.module.less";
 
 import { SelectedDevicesCard } from "./core";
@@ -8,7 +10,13 @@ const headphonesImage = "images/home/headphones.png";
 const microphonesImage = "images/home/microphones.png";
 const caseImage = "images/home/case.png";
 
-function BodySelectedDevices() {
+function BodySelectedDevices({
+  headphones,
+  microphones,
+  transmitter,
+  receiver,
+  equipmentCase,
+}) {
   return (
     <div className={styles.main}>
       <SelectedDevicesCard
@@ -49,5 +57,13 @@ function BodySelectedDevices() {
     </div>
   );
 }
+
+BodySelectedDevices.propTypes = {
+  headphones: PropTypes.object,
+  microphones: PropTypes.object,
+  transmitter: PropTypes.object,
+  receiver: PropTypes.object,
+  equipmentCase: PropTypes.object,
+};
 
 export default BodySelectedDevices;

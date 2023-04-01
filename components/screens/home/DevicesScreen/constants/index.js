@@ -1,1 +1,0 @@
-export { DEVICES } from "./devices";

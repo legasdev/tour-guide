@@ -32,7 +32,11 @@ function PromoScreen() {
       />
       <Button.Group>
         <Button translate="Изнајмите опрему">Rent a Gear</Button>
-        <Button translate="Прикажи систем" theme={Button.themes.white}>
+        <Button
+          href="/#guide-system"
+          translate="Прикажи систем"
+          theme={Button.themes.white}
+        >
           Show System
         </Button>
       </Button.Group>

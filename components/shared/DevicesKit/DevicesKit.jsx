@@ -11,7 +11,13 @@ function DevicesKit({ title, titleTranslate }) {
       <Title size={Title.sizes.h3} translate={titleTranslate}>
         {title}
       </Title>
-      <SelectedDevices />
+      <SelectedDevices
+        receiver={""}
+        transmitter={""}
+        microphones={""}
+        headphones={""}
+        equipmentCase={""}
+      />
       <Button.Group>
         <Button translate="Изнајмите комплет">Rent a Kit</Button>
         <Button translate="Препоручено" theme={Button.themes.white}>
