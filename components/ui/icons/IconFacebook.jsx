@@ -20,4 +20,4 @@ function IconFacebook() {
   );
 }
 
-export default IconFacebook;
+export { IconFacebook };

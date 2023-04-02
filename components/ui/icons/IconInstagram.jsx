@@ -30,4 +30,4 @@ function IconInstagram() {
   );
 }
 
-export default IconInstagram;
+export { IconInstagram };

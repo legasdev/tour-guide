@@ -59,11 +59,11 @@ function BodySelectedDevices({
 }
 
 BodySelectedDevices.propTypes = {
-  headphones: PropTypes.object,
-  microphones: PropTypes.object,
-  transmitter: PropTypes.object,
-  receiver: PropTypes.object,
-  equipmentCase: PropTypes.object,
+  headphones: PropTypes.string,
+  microphones: PropTypes.string,
+  transmitter: PropTypes.string,
+  receiver: PropTypes.string,
+  equipmentCase: PropTypes.string,
 };
 
 export default BodySelectedDevices;

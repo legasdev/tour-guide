@@ -20,7 +20,13 @@ function SelectedDevices({
 
   return (
     <div className={styles.main}>
-      <HeaderSelectedDevices />
+      <HeaderSelectedDevices
+        headphones={headphonesDevice}
+        microphones={microphonesDevice}
+        transmitter={transmitterDevice}
+        receiver={receiverDevice}
+        equipmentCase={equipmentCaseDevice}
+      />
       <BodySelectedDevices
         headphones={headphonesDevice}
         microphones={microphonesDevice}
@@ -33,11 +39,11 @@ function SelectedDevices({
 }
 
 SelectedDevices.propTypes = {
-  headphones: PropTypes.object,
-  microphones: PropTypes.object,
-  transmitter: PropTypes.object,
-  receiver: PropTypes.object,
-  equipmentCase: PropTypes.object,
+  headphones: PropTypes.string,
+  microphones: PropTypes.string,
+  transmitter: PropTypes.string,
+  receiver: PropTypes.string,
+  equipmentCase: PropTypes.string,
 };
 
 export default SelectedDevices;
