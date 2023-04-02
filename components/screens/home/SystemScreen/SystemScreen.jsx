@@ -11,7 +11,7 @@ function SystemScreen() {
     <ImageScreen
       id="guide-system"
       title="Collect Your System to a Better Experience."
-      translate="Сакупите свој систем за боље искуство."
+      translate="Sklopite svoj sistem za bolje iskustvo vodiča."
       image={guideSystemScreenImage}
     >
       <div className={styles.main}>

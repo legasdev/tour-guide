@@ -9,37 +9,37 @@ const ROUTES = [
     id: "guide-system",
     route: "/#guide-system",
     label: "Guide System",
-    translate: "Систем водича",
+    translate: "Oprema vodiča",
   },
   {
     id: "devices",
     route: "/#devices",
     label: "Devices",
-    translate: "Уређаји",
+    translate: "Uređaji",
   },
   {
     id: "conferences",
     route: "/#conferences",
     label: "Conferences",
-    translate: "Конференције",
+    translate: "Konferencije",
   },
   {
     id: "translation",
     route: "/#translation",
     label: "Translation",
-    translate: "Превод",
+    translate: "Prevod",
   },
   {
     id: "price",
     route: "/", // TODO: Заменить на файл
     label: "Price",
-    translate: "Цена",
+    translate: "Cijena",
   },
   {
     id: "contacts",
     route: "/#contacts",
     label: "Contacts",
-    translate: "Контакти",
+    translate: "Kontakti",
   },
 ];
 

@@ -9,23 +9,25 @@ function ContactsScreen() {
         <div className={styles.block}>
           <div className={styles.contacts}>
             <h4 className={styles.title}>Phone / Телефон:</h4>
-            <a className={styles.contactLink} href="tel:+37033333333">
-              +370 333 33333
+            <a className={styles.contactLink} href="tel:+38267277971">
+              +382 672 77971 (WhatsApp, Viber)
             </a>
           </div>
           <div>
             <h4 className={styles.title}>E-mail:</h4>
             <a
               className={styles.contactLink}
-              href="mailto:guidesystem@eeee.ccc"
+              href="mailto:monteregion@gmail.com"
             >
-              guidesystem@meee.eee
+              monteregion@gmail.com
             </a>
           </div>
           <div>
-            <h4 className={styles.title}>Address / Адреса:</h4>
+            <h4 className={styles.title}>Address / Adresa:</h4>
             <span className={styles.contactLink}>
-              Sausio 13-osios g. 2, Vilnius
+              <span>Turistička agencija Monteniko</span>
+              <br />
+              <span>85310, Budva, Rozino b/b</span>
             </span>
           </div>
         </div>

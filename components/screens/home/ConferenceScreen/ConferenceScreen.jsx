@@ -8,12 +8,12 @@ function ConferenceScreen() {
     <PageBlock
       id="conferences"
       title="Revolutionize Your Conference Calls."
-      titleTranslate="Револуционишите своје конференцијске позиве."
+      titleTranslate="Organizujte konferenciju uz našu pomoć."
     >
       <Article
         image={articleImage}
-        titleTranslate="Револуционишите своје конференцијске позиве помоћу нашег система који је једноставан за коришћење"
         title="Revolutionize Your Conference Calls with Our Easy-to-Use System"
+        titleTranslate="Naš sistem je jednostavan za sprovođenje konferencija. Predlažemo vam specijalne slušalice za dugo i komforno korišćenje u toku dana."
       >
         <Article.Paragraph>
           {"[En] Do you struggle with poor audio quality, technical difficulties, and unproductive conference calls? Our user-friendly conference call system is here to help. With high-quality microphones and easy-to-use controls, our system ensures that every participant is heard clearly and without interruptions. \n" +
@@ -29,6 +29,11 @@ function ConferenceScreen() {
       <DevicesKit
         title="Recommended Set for Conferences."
         titleTranslate="Препоручени сет за конференције."
+        headphones="headphones_default"
+        microphones="microphones_dark"
+        transmitter="transmitter_dark"
+        receiver="receiver_default"
+        equipmentCase="case_default"
       />
     </PageBlock>
   );

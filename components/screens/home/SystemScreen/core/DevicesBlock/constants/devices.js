@@ -3,51 +3,49 @@ const DEVICES_LIST = [
     id: "transmitter",
     image: "images/home/transmitter.png",
     label: "Guide Transmitter",
-    labelTranslate: "Предајник водича",
+    labelTranslate: "Odašiljač vodiča",
     description:
       "Our headphones for guides are designed to provide an exceptional audio.",
     descriptionTranslate:
-      "Наше слушалице за водиче су дизајниране да пруже изузетан звук.",
+      "Naš odašiljač je dizajniran da prenese kvalitetan signal.",
   },
   {
     id: "receiver",
     image: "images/home/receiver.png",
     label: "User Receiver",
-    labelTranslate: "Усер Рецеивер",
+    labelTranslate: "Korisnički prijemnik",
     description:
       "Our headphones for guides are designed to provide an exceptional audio.",
     descriptionTranslate:
-      "Наше слушалице за водиче су дизајниране да пруже изузетан звук.",
+      "Naš prijemnik za vodiče je dizajniran da preda izuzetan zvuk.",
   },
   {
     id: "headphones",
     image: "images/home/headphones.png",
     label: "Headphones",
-    labelTranslate: "Слушалице",
+    labelTranslate: "Slušalice",
     description:
       "Our headphones for guides are designed to provide an exceptional audio.",
-    descriptionTranslate:
-      "Наше слушалице за водиче су дизајниране да пруже изузетан звук.",
+    descriptionTranslate: "Izaberite udobne slušalice za svoje turiste.",
   },
   {
     id: "microphones",
     image: "images/home/microphones.png",
     label: "Microphones",
-    labelTranslate: "Микрофони",
+    labelTranslate: "Mikrofoni",
     description:
       "Our headphones for guides are designed to provide an exceptional audio.",
-    descriptionTranslate:
-      "Наше слушалице за водиче су дизајниране да пруже изузетан звук.",
+    descriptionTranslate: "Izaberite odgovarajući mikrofon za vodiča.",
   },
   {
     id: "case",
     image: "images/home/case.png",
     label: "Equipment Case",
-    labelTranslate: "Кућиште за опрему",
+    labelTranslate: "Kučište za prenos i punjenje opreme",
     description:
       "Our headphones for guides are designed to provide an exceptional audio.",
     descriptionTranslate:
-      "Наше слушалице за водиче су дизајниране да пруже изузетан звук.",
+      "Predlažemo vam lake kutije za kratkoročne izlete ili koferče (kućište za punjenje) za dugotrajane ekskurzije.",
   },
 ];
 

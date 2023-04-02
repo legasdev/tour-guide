@@ -1,4 +1,3 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
 
 import styles from "./SelectedDevices.module.less";
@@ -11,28 +10,24 @@ function SelectedDevices({
   transmitter,
   receiver,
   equipmentCase,
+  onChange,
 }) {
-  const [headphonesDevice, setHeadphonesDevice] = useState(headphones);
-  const [microphonesDevice, setMicrophonesDevice] = useState(microphones);
-  const [transmitterDevice, setTransmitterDevice] = useState(transmitter);
-  const [receiverDevice, setReceiverDevice] = useState(receiver);
-  const [equipmentCaseDevice, setEquipmentCase] = useState(equipmentCase);
-
   return (
     <div className={styles.main}>
       <HeaderSelectedDevices
-        headphones={headphonesDevice}
-        microphones={microphonesDevice}
-        transmitter={transmitterDevice}
-        receiver={receiverDevice}
-        equipmentCase={equipmentCaseDevice}
+        headphones={headphones}
+        microphones={microphones}
+        transmitter={transmitter}
+        receiver={receiver}
+        equipmentCase={equipmentCase}
+        onChange={onChange}
       />
       <BodySelectedDevices
-        headphones={headphonesDevice}
-        microphones={microphonesDevice}
-        transmitter={transmitterDevice}
-        receiver={receiverDevice}
-        equipmentCase={equipmentCaseDevice}
+        headphones={headphones}
+        microphones={microphones}
+        transmitter={transmitter}
+        receiver={receiver}
+        equipmentCase={equipmentCase}
       />
     </div>
   );
@@ -44,6 +39,7 @@ SelectedDevices.propTypes = {
   transmitter: PropTypes.string,
   receiver: PropTypes.string,
   equipmentCase: PropTypes.string,
+  onChange: PropTypes.func,
 };
 
 export default SelectedDevices;

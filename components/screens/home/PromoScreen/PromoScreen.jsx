@@ -11,7 +11,9 @@ function PromoScreen() {
     <div className={styles.main}>
       <div>
         <div className={styles.titles}>
-          <Title translate="Опрема за водиче.">Gear for Guides.</Title>
+          <Title translate="Audio oprema za turističke vodiče Montenegro.">
+            Gear for Guides.
+          </Title>
         </div>
         <div className={styles.description}>
           <span className={styles.description_text}>
@@ -19,8 +21,8 @@ function PromoScreen() {
             Microphones.
           </span>
           <span className={styles.description_text}>
-            Водите своје госте до бољег искуства помоћу наших слушалица и
-            микрофона.
+            S našim audio sistemom vodič će raditi, i neće trošiti vrijeme na
+            podešavanje
           </span>
         </div>
       </div>
@@ -31,10 +33,10 @@ function PromoScreen() {
         alt=""
       />
       <Button.Group>
-        <Button translate="Изнајмите опрему">Rent a Gear</Button>
+        <Button translate="Iznajmite opremu">Rent a Gear</Button>
         <Button
           href="/#guide-system"
-          translate="Прикажи систем"
+          translate="Pokazati sistem"
           theme={Button.themes.white}
         >
           Show System
