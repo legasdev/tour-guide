@@ -40,7 +40,7 @@ function ContactsScreen() {
             <h4 className={styles.title}>
               Receiver Instruction Manual
               <br />
-              Priručnik s uputama za prijemnik:
+              Priručnik sa uputstvom za prijemnik:
             </h4>
             <a
               className={styles.contactLink}
@@ -55,7 +55,7 @@ function ContactsScreen() {
             <h4 className={styles.title}>
               Equipment Case Instruction Manual
               <br />
-              Priručnik s uputama za kutiju opreme:
+              Priručnik sa uputstvom za kućište za punjenje:
             </h4>
             <a
               className={styles.contactLink}

@@ -12,7 +12,7 @@ function PromoScreen() {
       <div>
         <div className={styles.titles}>
           <Title translate="Audio oprema za turističke vodiče Montenegro.">
-            Gear for Guides.
+            Tour guide equipment rental Montenegro.
           </Title>
         </div>
         <div className={styles.description}>
