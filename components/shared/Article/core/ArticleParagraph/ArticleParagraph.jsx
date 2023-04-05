@@ -7,11 +7,11 @@ function ArticleParagraph({ children }) {
 }
 
 ArticleParagraph.propTypes = {
-  children: PropTypes.oneOfType(
+  children: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ),
+    PropTypes.arrayOf(PropTypes.node),
+  ]),
 };
 
 export default ArticleParagraph;

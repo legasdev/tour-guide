@@ -15,10 +15,10 @@ function Select({ value, onChange, children }) {
 Select.propTypes = {
   value: PropTypes.string,
   onChange: PropTypes.func,
-  children: PropTypes.oneOfType(
+  children: PropTypes.oneOfType([
     PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ),
+    PropTypes.arrayOf(PropTypes.node),
+  ]),
 };
 
 Select.Option = SelectOption;

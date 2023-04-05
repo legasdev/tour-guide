@@ -38,10 +38,10 @@ Article.propTypes = {
   title: PropTypes.string,
   titleTranslate: PropTypes.string,
   reverse: PropTypes.bool,
-  children: PropTypes.oneOfType(
+  children: PropTypes.oneOfType([
     PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ),
+    PropTypes.arrayOf(PropTypes.node),
+  ]),
 };
 
 export default Article;
