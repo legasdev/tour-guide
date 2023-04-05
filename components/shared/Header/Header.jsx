@@ -16,7 +16,7 @@ function Header() {
     <>
       <header className={styles.main}>
         <div className={styles.wrapper}>
-          <a href="/#">
+          <a href="/#" aria-label="Open home page">
             <img src={logoImage} alt="" />
           </a>
           <Navigation

@@ -24,6 +24,7 @@ function Navigation({
         <button
           className={styles.mobileMenuButton}
           onClick={handleMobileMenuClick}
+          aria-label="Menu"
         >
           {isMobileMenuOpen ? <IconDecline /> : <IconMobileMenu />}
         </button>
