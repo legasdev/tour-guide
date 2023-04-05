@@ -2,12 +2,12 @@ const DEVICE_INFORMATION_TABS = [
   {
     id: "specifications",
     label: "Specifications",
-    labelTranslate: "Спецификације",
+    labelTranslate: "Specifikaciје",
   },
   {
     id: "description",
     label: "Description",
-    labelTranslate: "Опис",
+    labelTranslate: "Opis",
   },
 ];
 

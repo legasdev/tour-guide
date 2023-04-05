@@ -11,14 +11,14 @@ function MultilingualToursScreen() {
   return (
     <ImageScreen
       id="translation"
-      title="Our Translation System for Multilingual Tours."
+      title="Organize the work of your translator."
       translate="Organizujte rad svojeg prevodioca."
       image={multilingualToursScreenImage}
     >
       <BlurBlock className={styles.main}>
         <Article
           image={articleImage}
-          title="Revolutionize Your Conference Calls with Our Easy-to-Use System"
+          title="Our system will provide you with accurate translation during seminars and conferences. We will recommend a comfortable microphone."
           titleTranslate="Naš sistem će vam priuštiti precizan prevod tokom seminara, konferencije. Preporičićemo vam udoban mikrofon."
           reverse
         >
@@ -34,8 +34,8 @@ function MultilingualToursScreen() {
           </Article.Paragraph>
         </Article>
         <DevicesKit
-          title="Recommended Set for Multilingual Tours."
-          titleTranslate="Препоручени сет за вишејезичне туре."
+          title="Recommended translator set."
+          titleTranslate="Preporučeni set za prevodioca."
           headphones="headphones_default"
           microphones="microphones_dark"
           transmitter="transmitter_default"

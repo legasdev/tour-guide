@@ -4,14 +4,15 @@ function DevicesDescriptions() {
   return (
     <div className={styles.main}>
       <p className={styles.text}>
-        [En] Our headphones for guides are designed to provide an exceptional
-        audio experience for your tour guests. They are lightweight, comfortable
-        to wear, and have noise-cancelling capabilities to eliminate any
-        background noise. With clear audio quality, your guests will be able to
-        hear every word of your tour without any distortion or interference. Our
-        headphones are also durable and built to last, making them ideal for
-        frequent use in various environments. They are the perfect tool to
-        enhance your guests' experience while on your tour.
+        [En] Our Tour Guide System is available in Montenegro for rent only.
+        This tour guide equipment provides the perfect solution for city tours
+        and travel tours. Our gear for guides operates up to a range of 70m. For
+        extra insurance for guides we provide additional microphones, batteries
+        and headphones with the rental. Our tour guide system is utilized by the
+        local company Monteniko located in Montenegro. Reviews from tourists
+        using our system share they had an enjoyable listening experience and
+        our audio systems helped the tour guide lead the tour, without
+        distracting them.
       </p>
       <p className={styles.text}>
         [Sr] Наше слушалице за водиче су дизајниране да пруже изузетно аудио

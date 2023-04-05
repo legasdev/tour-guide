@@ -4,6 +4,8 @@ const logoImage = "images/logo/logo.svg";
 
 import { Navigation, Social } from "@components/common";
 
+const currentYear = new Date().getFullYear();
+
 function Footer() {
   return (
     <footer className={styles.main}>
@@ -13,8 +15,10 @@ function Footer() {
         <img src={logoImage} alt="" />
       </a>
       <span className={styles.copyright}>
-        Tour guide system rental - Montenegro. Изнајмљивање система водича -
-        Црна Гора. © 2023 All rights reserved.
+        Monteniko d.o.o Tour guide system rental - Montenegro.
+        <br />
+        Monteniko d.o.o. Iznajmljivanje sistema vodiča - Crna Gora.
+        <br />© {currentYear} All rights reserved.
       </span>
     </footer>
   );

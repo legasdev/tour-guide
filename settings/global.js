@@ -1,5 +1,5 @@
-const GLOBAL_SETTINGS = Object.freeze({
+export const GLOBAL_SETTINGS = Object.freeze({
   siteName: "Tour Guide Rental System",
 });
 
-export { GLOBAL_SETTINGS };
+export const DOMAIN = "https://tour-guide-gamma.vercel.app";

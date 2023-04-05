@@ -7,12 +7,12 @@ function ConferenceScreen() {
   return (
     <PageBlock
       id="conferences"
-      title="Revolutionize Your Conference Calls."
+      title="Organize a conference with our help."
       titleTranslate="Organizujte konferenciju uz našu pomoć."
     >
       <Article
         image={articleImage}
-        title="Revolutionize Your Conference Calls with Our Easy-to-Use System"
+        title="Our system is easy to conduct conferences. We offer you special headphones for long and comfortable use during the day."
         titleTranslate="Naš sistem je jednostavan za sprovođenje konferencija. Predlažemo vam specijalne slušalice za dugo i komforno korišćenje u toku dana."
       >
         <Article.Paragraph>
@@ -27,8 +27,8 @@ function ConferenceScreen() {
         </Article.Paragraph>
       </Article>
       <DevicesKit
-        title="Recommended Set for Conferences."
-        titleTranslate="Препоручени сет за конференције."
+        title="Recommended conference set."
+        titleTranslate="Preporučeni set za konferencije."
         headphones="headphones_default"
         microphones="microphones_dark"
         transmitter="transmitter_dark"

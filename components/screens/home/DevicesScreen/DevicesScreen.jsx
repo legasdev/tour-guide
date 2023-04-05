@@ -10,7 +10,7 @@ function DevicesScreen() {
     <PageBlock
       id="devices"
       title="Devices."
-      titleTranslate="Уређаји."
+      titleTranslate="Uređaji."
       theme={PageBlock.themes.grey}
       className={styles.main}
     >

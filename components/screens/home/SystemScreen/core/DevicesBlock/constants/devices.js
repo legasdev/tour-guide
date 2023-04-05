@@ -4,8 +4,7 @@ const DEVICES_LIST = [
     image: "images/home/transmitter.png",
     label: "Guide Transmitter",
     labelTranslate: "Odašiljač vodiča",
-    description:
-      "Our headphones for guides are designed to provide an exceptional audio.",
+    description: "Our transmitter is designed to transmit a quality signal.",
     descriptionTranslate:
       "Naš odašiljač je dizajniran da prenese kvalitetan signal.",
   },
@@ -14,8 +13,7 @@ const DEVICES_LIST = [
     image: "images/home/receiver.png",
     label: "User Receiver",
     labelTranslate: "Korisnički prijemnik",
-    description:
-      "Our headphones for guides are designed to provide an exceptional audio.",
+    description: "Our guide receiver is designed to deliver exceptional sound.",
     descriptionTranslate:
       "Naš prijemnik za vodiče je dizajniran da preda izuzetan zvuk.",
   },
@@ -24,8 +22,7 @@ const DEVICES_LIST = [
     image: "images/home/headphones.png",
     label: "Headphones",
     labelTranslate: "Slušalice",
-    description:
-      "Our headphones for guides are designed to provide an exceptional audio.",
+    description: "Choose comfortable headphones for your tourists.",
     descriptionTranslate: "Izaberite udobne slušalice za svoje turiste.",
   },
   {
@@ -33,8 +30,7 @@ const DEVICES_LIST = [
     image: "images/home/microphones.png",
     label: "Microphones",
     labelTranslate: "Mikrofoni",
-    description:
-      "Our headphones for guides are designed to provide an exceptional audio.",
+    description: "Select the appropriate microphone for the guide.",
     descriptionTranslate: "Izaberite odgovarajući mikrofon za vodiča.",
   },
   {
@@ -43,7 +39,7 @@ const DEVICES_LIST = [
     label: "Equipment Case",
     labelTranslate: "Kučište za prenos i punjenje opreme",
     description:
-      "Our headphones for guides are designed to provide an exceptional audio.",
+      "We suggest light boxes for short-term trips or suitcases (charging case) for long-term excursions.",
     descriptionTranslate:
       "Predlažemo vam lake kutije za kratkoročne izlete ili koferče (kućište za punjenje) za dugotrajane ekskurzije.",
   },
