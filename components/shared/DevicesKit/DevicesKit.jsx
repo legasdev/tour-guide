@@ -60,14 +60,14 @@ function DevicesKit({
       <Title size={Title.sizes.h3} translate={titleTranslate}>
         {title}
       </Title>
-      <SelectedDevices
-        receiver={receiverDevice}
-        transmitter={transmitterDevice}
-        microphones={microphonesDevice}
-        headphones={headphonesDevice}
-        equipmentCase={equipmentCaseDevice}
-        onChange={handleDeviceSelectChange}
-      />
+      {/*<SelectedDevices*/}
+      {/*  receiver={receiverDevice}*/}
+      {/*  transmitter={transmitterDevice}*/}
+      {/*  microphones={microphonesDevice}*/}
+      {/*  headphones={headphonesDevice}*/}
+      {/*  equipmentCase={equipmentCaseDevice}*/}
+      {/*  onChange={handleDeviceSelectChange}*/}
+      {/*/>*/}
       <Button.Group>
         <Button translate="Iznajmite komplet">Rent a Kit</Button>
         <Button

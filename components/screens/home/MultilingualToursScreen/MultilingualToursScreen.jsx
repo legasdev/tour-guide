@@ -14,6 +14,7 @@ function MultilingualToursScreen() {
       title="Organize the work of your translator."
       translate="Organizujte rad svojeg prevodioca."
       image={multilingualToursScreenImage}
+      className={styles.screen}
     >
       <BlurBlock className={styles.main}>
         <Article

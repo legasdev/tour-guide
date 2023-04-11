@@ -5,10 +5,11 @@ import { IconFacebook, IconInstagram } from "@components/ui/icons";
 function Social() {
   return (
     <div className={styles.main}>
-      <a href={"/"}>
-        <IconFacebook />
-      </a>
-      <a href={"/"}>
+      <a
+        href="https://instagram.com/monteregion"
+        target="_blank"
+        rel="noopener"
+      >
         <IconInstagram />
       </a>
     </div>

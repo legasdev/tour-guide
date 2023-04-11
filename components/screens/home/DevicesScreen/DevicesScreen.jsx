@@ -12,9 +12,8 @@ function DevicesScreen() {
       title="Devices."
       titleTranslate="Uređaji."
       theme={PageBlock.themes.grey}
-      className={styles.main}
     >
-      <div className={styles.content}>
+      <div className={styles.main}>
         {DEVICES.map((device) => {
           return <Device key={device.id} {...device} />;
         })}

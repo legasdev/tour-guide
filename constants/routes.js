@@ -18,6 +18,12 @@ const ROUTES = [
     translate: "Uređaji",
   },
   {
+    id: "excursions",
+    route: "/#excursions",
+    label: "Excursions",
+    translate: "Ekskurzije",
+  },
+  {
     id: "conferences",
     route: "/#conferences",
     label: "Conferences",

@@ -6,38 +6,31 @@ import styles from "./Device.module.less";
 import { DeviceHeader, DeviceBlock } from "./core";
 import { getDeviceByVariant, getDeviceVariantsForSelect } from "./utils";
 
-function Device({ id, image, label, labelTranslate, variants }) {
-  const variantsForSelect = useRef(getDeviceVariantsForSelect(variants));
-  const [deviceModel, setDeviceModel] = useState(
-    variantsForSelect.current[0].id
-  );
-
-  const deviceVariant = getDeviceByVariant(variants, deviceModel);
-
-  function handleDeviceSelectChanged(event) {
-    setDeviceModel(event.target.value);
-  }
-
+function Device({
+  images,
+  label,
+  labelTranslate,
+  description,
+  descriptionTranslate,
+}) {
   return (
     <div className={styles.main}>
-      <DeviceHeader
-        label={label}
-        labelTranslate={labelTranslate}
-        variantsRef={variantsForSelect}
-        deviceModel={deviceModel}
-        handleDeviceSelectChanged={handleDeviceSelectChanged}
+      <DeviceHeader label={label} labelTranslate={labelTranslate} />
+      <DeviceBlock
+        images={images}
+        description={description}
+        descriptionTranslate={descriptionTranslate}
       />
-      <DeviceBlock deviceVariant={deviceVariant} />
     </div>
   );
 }
 
 Device.propTypes = {
-  id: PropTypes.string,
-  image: PropTypes.string,
+  images: PropTypes.arrayOf(PropTypes.string),
   label: PropTypes.string,
   labelTranslate: PropTypes.string,
-  variants: PropTypes.arrayOf(PropTypes.object),
+  description: PropTypes.string,
+  descriptionTranslate: PropTypes.string,
 };
 
 export default Device;

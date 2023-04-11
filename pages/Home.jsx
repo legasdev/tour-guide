@@ -6,6 +6,7 @@ import {
   DevicesScreen,
   ConferenceScreen,
   MultilingualToursScreen,
+  ExcursionsScreen,
   ContactsScreen,
 } from "@components/screens/home";
 
@@ -18,6 +19,7 @@ function Home() {
         <PromoScreen />
         <SystemScreen />
         <DevicesScreen />
+        <ExcursionsScreen />
         <ConferenceScreen />
         <MultilingualToursScreen />
         <ContactsScreen />

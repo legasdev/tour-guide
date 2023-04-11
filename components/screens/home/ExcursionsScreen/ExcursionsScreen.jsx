@@ -1,22 +1,14 @@
 import { Article, PageBlock, DevicesKit } from "@components/shared";
 
-import styles from "./ConferenceScreen.module.less";
+const articleImage = "images/home/excursions.jpg";
 
-const articleImage = "images/home/conference.jpg";
-
-function ConferenceScreen() {
+function ExcursionsScreen() {
   return (
-    <PageBlock
-      id="conferences"
-      title="Organize a conference with our help."
-      titleTranslate="Organizujte konferenciju uz našu pomoć."
-      theme={PageBlock.themes.grey}
-      className={styles.main}
-    >
+    <PageBlock id="excursions" title="Excursions." titleTranslate="Ekskurzije.">
       <Article
         image={articleImage}
-        title="Our system is easy to conduct conferences. We offer you special headphones for long and comfortable use during the day."
-        titleTranslate="Naš sistem je jednostavan za sprovođenje konferencija. Predlažemo vam specijalne slušalice za dugo i komforno korišćenje u toku dana."
+        title="City, Bus, Ship tours."
+        titleTranslate="Gradske, autobuske i plovne ekskurzije."
       >
         <Article.Paragraph>
           {"[En] Do you struggle with poor audio quality, technical difficulties, and unproductive conference calls? Our user-friendly conference call system is here to help. With high-quality microphones and easy-to-use controls, our system ensures that every participant is heard clearly and without interruptions. \n" +
@@ -30,8 +22,8 @@ function ConferenceScreen() {
         </Article.Paragraph>
       </Article>
       <DevicesKit
-        title="Recommended conference set."
-        titleTranslate="Preporučeni set za konferencije."
+        title="Recommended set."
+        titleTranslate="Preporučeni set."
         headphones="headphones_default"
         microphones="microphones_dark"
         transmitter="transmitter_dark"
@@ -42,4 +34,4 @@ function ConferenceScreen() {
   );
 }
 
-export default ConferenceScreen;
+export default ExcursionsScreen;
