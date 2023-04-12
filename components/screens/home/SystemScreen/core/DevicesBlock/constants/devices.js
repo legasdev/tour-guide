@@ -3,7 +3,7 @@ const DEVICES_LIST = [
     id: "transmitter",
     image: "images/home/transmitter.png",
     label: "Guide Transmitter",
-    labelTranslate: "Odašiljač vodiča",
+    labelTranslate: "Odašiljač Vodiča",
     description: "Our transmitter is designed to transmit a quality signal.",
     descriptionTranslate:
       "Naš odašiljač je dizajniran da prenese kvalitetan signal.",
@@ -12,7 +12,7 @@ const DEVICES_LIST = [
     id: "receiver",
     image: "images/home/receiver.png",
     label: "User Receiver",
-    labelTranslate: "Korisnički prijemnik",
+    labelTranslate: "Korisnički Prijemnik",
     description: "Our guide receiver is designed to deliver exceptional sound.",
     descriptionTranslate:
       "Naš prijemnik za vodiče je dizajniran da preda izuzetan zvuk.",
@@ -35,9 +35,9 @@ const DEVICES_LIST = [
   },
   {
     id: "case",
-    image: "images/home/case.png",
+    image: "images/home/light-bag.png",
     label: "Equipment Case",
-    labelTranslate: "Kučište za prenos i punjenje opreme",
+    labelTranslate: "Kučište za Prenos i Punjenje Opreme",
     description:
       "We suggest light boxes for short-term trips or suitcases (charging case) for long-term excursions.",
     descriptionTranslate:

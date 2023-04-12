@@ -9,7 +9,7 @@ const ROUTES = [
     id: "guide-system",
     route: "/#guide-system",
     label: "Guide System",
-    translate: "Oprema vodiča",
+    translate: "Oprema Vodiča",
   },
   {
     id: "devices",

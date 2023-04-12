@@ -6,18 +6,6 @@ import { DEVICES } from "@constants/devices";
 import { SelectedDevicesCard } from "./core";
 import { useRef } from "react";
 
-const transmitterImage = "images/home/transmitter.png";
-const receiverImage = "images/home/receiver.png";
-const headphonesImage = "images/home/headphones.png";
-const microphonesImage = "images/home/microphones.png";
-const caseImage = "images/home/case.png";
-
-const headphonesDevice = DEVICES.find((device) => device.id === "headphones");
-const microphonesDevice = DEVICES.find((device) => device.id === "microphones");
-const transmitterDevice = DEVICES.find((device) => device.id === "transmitter");
-const receiverDevice = DEVICES.find((device) => device.id === "receiver");
-const equipmentCaseDevice = DEVICES.find((device) => device.id === "case");
-
 function BodySelectedDevices({
   headphones,
   microphones,
@@ -25,25 +13,16 @@ function BodySelectedDevices({
   receiver,
   equipmentCase,
 }) {
-  const headphonesVariant = headphonesDevice.variants.find(
-    (variant) => variant.id === headphones
-  );
-  const microphonesVariant = microphonesDevice.variants.find(
-    (variant) => variant.id === microphones
-  );
-  const transmitterVariant = transmitterDevice.variants.find(
-    (variant) => variant.id === transmitter
-  );
-  const receiverVariant = receiverDevice.variants.find(
-    (variant) => variant.id === receiver
-  );
-  const caseVariant = equipmentCaseDevice.variants.find(
-    (variant) => variant.id === equipmentCase
-  );
+  const headphonesVariant = DEVICES.find(({ id }) => id === headphones);
+  const microphonesVariant = DEVICES.find(({ id }) => id === microphones);
+  const transmitterVariant = DEVICES.find(({ id }) => id === transmitter);
+  const receiverVariant = DEVICES.find(({ id }) => id === receiver);
+  const caseVariant = DEVICES.find(({ id }) => id === equipmentCase);
 
   return (
     <div className={styles.main}>
       <SelectedDevicesCard
+        id={headphones}
         image={headphonesVariant.images[0]}
         title="Headphones"
         titleTranslate="Slušalice"
@@ -51,6 +30,7 @@ function BodySelectedDevices({
         className={styles.headphones}
       />
       <SelectedDevicesCard
+        id={microphones}
         image={microphonesVariant.images[0]}
         title="Microphones"
         titleTranslate="Mikrofoni"
@@ -58,6 +38,7 @@ function BodySelectedDevices({
         className={styles.microphones}
       />
       <SelectedDevicesCard
+        id={transmitter}
         image={transmitterVariant.images[0]}
         title="Guide Transmitter"
         titleTranslate="Odašiljač vodiča"
@@ -65,6 +46,7 @@ function BodySelectedDevices({
         className={styles.transmitter}
       />
       <SelectedDevicesCard
+        id={receiver}
         image={receiverVariant.images[0]}
         title="User Receiver"
         titleTranslate="Korisnički prijemnik"
@@ -72,6 +54,7 @@ function BodySelectedDevices({
         className={styles.receiver}
       />
       <SelectedDevicesCard
+        id={equipmentCase}
         image={caseVariant.images[0]}
         title="Case"
         titleTranslate="Kučište za prenos"

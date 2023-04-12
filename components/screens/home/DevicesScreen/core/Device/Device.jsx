@@ -7,6 +7,7 @@ import { DeviceHeader, DeviceBlock } from "./core";
 import { getDeviceByVariant, getDeviceVariantsForSelect } from "./utils";
 
 function Device({
+  id,
   images,
   label,
   labelTranslate,
@@ -14,7 +15,7 @@ function Device({
   descriptionTranslate,
 }) {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id={id}>
       <DeviceHeader label={label} labelTranslate={labelTranslate} />
       <DeviceBlock
         images={images}
@@ -26,6 +27,7 @@ function Device({
 }
 
 Device.propTypes = {
+  id: PropTypes.string,
   images: PropTypes.arrayOf(PropTypes.string),
   label: PropTypes.string,
   labelTranslate: PropTypes.string,

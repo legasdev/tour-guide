@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 
 import styles from "./DevicesKit.module.less";
 
+import { CONTACTS } from "@constants/contacts";
 import { Title } from "@components/common";
 import { Button } from "@components/ui/buttons";
 
 import { SelectedDevices } from "./core";
-import { useState } from "react";
 
 function DevicesKit({
   title,
@@ -17,65 +17,24 @@ function DevicesKit({
   receiver,
   equipmentCase,
 }) {
-  const [headphonesDevice, setHeadphonesDevice] = useState(headphones);
-  const [microphonesDevice, setMicrophonesDevice] = useState(microphones);
-  const [transmitterDevice, setTransmitterDevice] = useState(transmitter);
-  const [receiverDevice, setReceiverDevice] = useState(receiver);
-  const [equipmentCaseDevice, setEquipmentCase] = useState(equipmentCase);
-
-  function handleDeviceSelectChange(device, deviceVariant) {
-    switch (device) {
-      case "headphones":
-        setHeadphonesDevice(deviceVariant);
-        break;
-
-      case "microphones":
-        setMicrophonesDevice(deviceVariant);
-        break;
-
-      case "transmitter":
-        setTransmitterDevice(deviceVariant);
-        break;
-
-      case "receiver":
-        setReceiverDevice(deviceVariant);
-        break;
-
-      case "case":
-        setEquipmentCase(deviceVariant);
-        break;
-    }
-  }
-
-  function resetDevicesKit() {
-    setHeadphonesDevice(headphones);
-    setMicrophonesDevice(microphones);
-    setTransmitterDevice(transmitter);
-    setReceiverDevice(receiver);
-    setEquipmentCase(equipmentCase);
-  }
-
   return (
     <div className={styles.main}>
       <Title size={Title.sizes.h3} translate={titleTranslate}>
         {title}
       </Title>
-      {/*<SelectedDevices*/}
-      {/*  receiver={receiverDevice}*/}
-      {/*  transmitter={transmitterDevice}*/}
-      {/*  microphones={microphonesDevice}*/}
-      {/*  headphones={headphonesDevice}*/}
-      {/*  equipmentCase={equipmentCaseDevice}*/}
-      {/*  onChange={handleDeviceSelectChange}*/}
-      {/*/>*/}
+      <SelectedDevices
+        receiver={receiver}
+        transmitter={transmitter}
+        microphones={microphones}
+        headphones={headphones}
+        equipmentCase={equipmentCase}
+      />
       <Button.Group>
-        <Button translate="Iznajmite komplet">Rent a Kit</Button>
         <Button
-          translate="Препоручено"
-          theme={Button.themes.white}
-          onClick={resetDevicesKit}
+          href={`mailto:${CONTACTS.email.value}`}
+          translate="Iznajmite Komplet"
         >
-          Recommended
+          Rent a Kit
         </Button>
       </Button.Group>
     </div>

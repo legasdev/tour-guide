@@ -1,18 +1,7 @@
 .main {
   display: flex;
-
-  & > * + * {
-    margin-left: 2rem;
-  }
-
-  @media screen and (max-width: 460px) {
-    flex-direction: column;
-
-    & > * + * {
-      margin-top: 1rem;
-      margin-left: 0;
-    }
-  }
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .input {
@@ -21,17 +10,8 @@
 
 .label {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.875rem;
-  display: flex;
-  align-items: center;
   color: var(--color-dark-40);
-  cursor: pointer;
-  transition-duration: var(--animate-duration);
-  transition-property: color;
-
-  &__translate {
-    font-weight: 400;
-  }
 }

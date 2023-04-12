@@ -7,7 +7,7 @@ import { DeviceImages, DeviceInformation } from "./core";
 function DeviceBlock({ images, description, descriptionTranslate }) {
   return (
     <div className={styles.main}>
-      <DeviceImages imagesList={images[0]} />
+      <DeviceImages imagesList={images} />
       <DeviceInformation
         description={description}
         descriptionTranslate={descriptionTranslate}

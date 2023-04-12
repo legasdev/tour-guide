@@ -6,8 +6,7 @@ function DeviceInformationHeader() {
   const translateLabelStyles = clsx(styles.label, styles.label__translate);
   return (
     <header className={styles.main}>
-      <span className={styles.label}>Description</span>
-      <span className={translateLabelStyles}>Opis</span>
+      <span className={styles.label}>Description / Opis</span>
     </header>
   );
 }
