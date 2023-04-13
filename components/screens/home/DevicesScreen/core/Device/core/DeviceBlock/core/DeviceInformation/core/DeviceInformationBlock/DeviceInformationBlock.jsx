@@ -7,7 +7,7 @@ function DeviceInformationBlock({ description, descriptionTranslate }) {
     <div className={styles.main}>
       <div className={styles.description}>
         <p className={styles.description_text}>
-          <span className={styles.description_lang}>[Sr]</span>
+          <span className={styles.description_lang}>[Mne]</span>
           <span className={styles.description_text}>
             {descriptionTranslate}
           </span>

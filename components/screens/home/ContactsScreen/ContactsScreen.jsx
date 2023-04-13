@@ -9,7 +9,7 @@ const caseManualFile = "files/GuideSystemMontenegro-CaseInstructionManual.pdf";
 
 function ContactsScreen() {
   return (
-    <PageBlock id="contacts" title="Contacts." titleTranslate="Контакти.">
+    <PageBlock id="contacts" title="Contacts." titleTranslate="Kontakti.">
       <div className={styles.main}>
         <div className={styles.block}>
           <div className={styles.contacts}>

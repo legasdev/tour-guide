@@ -1,7 +1,10 @@
+import { useState } from "react";
+import clsx from "clsx";
+
 import styles from "./Header.module.less";
 
 import { Navigation } from "@components/common";
-import { useState } from "react";
+import { CONTACTS } from "@constants/contacts";
 
 const logoImage = "images/logo/logo.svg";
 
@@ -12,9 +15,27 @@ function Header() {
     setMobileMenuOpen(!isMobileMenuOpen);
   }
 
+  const topMenuWrapperStyles = clsx(
+    styles.wrapper,
+    styles.wrapper_topBottomPadding
+  );
+
   return (
     <>
       <header className={styles.main}>
+        <div className={styles.topMenu}>
+          <div className={topMenuWrapperStyles}>
+            <a
+              className={styles.topMenu__link}
+              href={`tel:${CONTACTS.telephone.value}`}
+            >
+              {CONTACTS.telephone.label} (WhatsApp, Viber)
+            </a>
+            <span className={styles.topMenu__description}>
+              Monteniko d.o.o. Iznajmljivanje sistema vodiča - Crna Gora.
+            </span>
+          </div>
+        </div>
         <div className={styles.wrapper}>
           <a href="/#" aria-label="Open home page">
             <img src={logoImage} alt="" />

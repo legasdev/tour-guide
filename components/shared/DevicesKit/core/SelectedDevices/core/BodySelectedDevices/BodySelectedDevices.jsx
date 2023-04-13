@@ -24,41 +24,36 @@ function BodySelectedDevices({
       <SelectedDevicesCard
         id={headphones}
         image={headphonesVariant.images[0]}
-        title="Headphones"
-        titleTranslate="Slušalice"
-        modelName={headphonesVariant.label}
+        title={headphonesVariant.label}
+        titleTranslate={headphonesVariant.labelTranslate}
         className={styles.headphones}
       />
       <SelectedDevicesCard
         id={microphones}
         image={microphonesVariant.images[0]}
-        title="Microphones"
-        titleTranslate="Mikrofoni"
-        modelName={microphonesVariant.label}
+        title={microphonesVariant.label}
+        titleTranslate={microphonesVariant.labelTranslate}
         className={styles.microphones}
       />
       <SelectedDevicesCard
         id={transmitter}
         image={transmitterVariant.images[0]}
-        title="Guide Transmitter"
-        titleTranslate="Odašiljač vodiča"
-        modelName={transmitterVariant.label}
+        title={transmitterVariant.label}
+        titleTranslate={transmitterVariant.labelTranslate}
         className={styles.transmitter}
       />
       <SelectedDevicesCard
         id={receiver}
         image={receiverVariant.images[0]}
-        title="User Receiver"
-        titleTranslate="Korisnički prijemnik"
-        modelName={receiverVariant.label}
+        title={receiverVariant.label}
+        titleTranslate={receiverVariant.labelTranslate}
         className={styles.receiver}
       />
       <SelectedDevicesCard
         id={equipmentCase}
         image={caseVariant.images[0]}
-        title="Case"
-        titleTranslate="Kučište za prenos"
-        modelName={caseVariant.label}
+        title={caseVariant.label}
+        titleTranslate={caseVariant.labelTranslate}
         className={styles.case}
       />
     </div>

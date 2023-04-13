@@ -16,7 +16,7 @@ function SystemScreen() {
     >
       <div className={styles.main}>
         <DevicesBlock />
-        <DevicesDescriptions />
+        {/*<DevicesDescriptions />*/}
       </div>
     </ImageScreen>
   );

@@ -4,14 +4,7 @@ import clsx from "clsx";
 import styles from "./SelectedDevicesCard.module.less";
 import Link from "next/link";
 
-function SelectedDevicesCard({
-  id,
-  image,
-  title,
-  titleTranslate,
-  modelName,
-  className,
-}) {
+function SelectedDevicesCard({ id, image, title, titleTranslate, className }) {
   const cardStyles = clsx(styles.main, className);
   const titleTranslateStyles = clsx(styles.title, styles.title__translate);
 
@@ -22,7 +15,6 @@ function SelectedDevicesCard({
       </div>
       <span className={styles.title}>{title}</span>
       <span className={titleTranslateStyles}>{titleTranslate}</span>
-      <span className={styles.modelName}>{modelName}</span>
     </Link>
   );
 }

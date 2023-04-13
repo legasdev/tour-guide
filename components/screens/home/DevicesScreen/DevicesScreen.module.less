@@ -1,7 +1,24 @@
 .main {
   width: 100%;
+  padding-bottom: 3rem;
 
   & > * + * {
-    margin-top: 5.125rem;
+    margin-top: 10rem;
+  }
+
+  @media screen and (max-width: 991px) {
+    & > * + * {
+      margin-top: 7rem;
+    }
+  }
+
+  @media screen and (max-width: 766px) {
+    padding-bottom: 0;
+  }
+
+  @media screen and (max-width: 575px) {
+    & > * + * {
+      margin-top: 5rem;
+    }
   }
 }
