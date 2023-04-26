@@ -10,12 +10,17 @@ const faviconIcoSrc = "images/favicons/favicon.ico";
 const faviconSvgSrc = "images/favicons/favicon.svg";
 const shareImage = "images/share-default.png";
 
-const description =
-  "Naš sistem za vodiče dostupan je u Crnoj Gori samo za iznajmljivanje. Naša oprema za vodiče je izvanredna opcija za gradske i kružne ture. Naša oprema radi u radijusu od 70 metara.\n" +
+/*
+Прошлый вариант
+Naš sistem za vodiče dostupan je u Crnoj Gori samo za iznajmljivanje. Naša oprema za vodiče je izvanredna opcija za gradske i kružne ture. Naša oprema radi u radijusu od 70 metara.\n" +
   "Naša opera vam takodje možete koristiti na konferencijama i kao pomoć za rad prevodiocima u toku konferencija.  Ovo je dobra oprema za sinhronizovani prevod u Crnoj Gori.\n" +
   "Za bolje iskustvo vodiča nudimo veliki izbor mikrofona i slušalica za iznajmljivanje.\n" +
   "Naš sistem za vodiče nudi lokalna kompanija «Monteniko» koja se nalazi u Crnoj Gori. \n" +
-  "Ocjene od strane turista koji su koristili naš sistem su takve da su uživali u doživljaju slušanja i takodje naš sistem pomaže vodiču da vodi turu bez ometanja.\n";
+  "Ocjene od strane turista koji su koristili naš sistem su takve da su uživali u doživljaju slušanja i takodje naš sistem pomaže vodiču da vodi turu bez ometanja.\n
+*/
+
+const description =
+  "Tour Guide System in Montenegro. Our guide equipment is a perfect solution for guides. Oprema za vodiča već u Crnoj Gorii. Naš sistem za vodiče je udoban i siguran.";
 
 function PageHead({ title = "" }) {
   const siteTitle = `${title}${GLOBAL_SETTINGS.siteName}`;
