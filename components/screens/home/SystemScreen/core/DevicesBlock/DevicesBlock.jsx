@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styles from "./DevicesBlock.module.less";
 
 import { BlurBlock, Title } from "@components/common";
@@ -17,7 +19,7 @@ function DevicesBlock() {
           descriptionTranslate,
         }) => (
           <BlurBlock key={id} className={styles[id]}>
-            <img className={styles.image} src={image} alt="" />
+            <Image className={styles.image} src={image} width={424} height={200} alt="" />
             <Title size={Title.sizes.h3} translate={labelTranslate}>
               {label}
             </Title>

@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
+import Link from "next/link";
+import Image from "next/image";
 
 import styles from "./SelectedDevicesCard.module.less";
-import Link from "next/link";
 
 function SelectedDevicesCard({ id, image, title, titleTranslate, className }) {
   const cardStyles = clsx(styles.main, className);
@@ -11,7 +12,7 @@ function SelectedDevicesCard({ id, image, title, titleTranslate, className }) {
   return (
     <Link href={`/#${id}`} className={cardStyles} scroll={false}>
       <div>
-        <img className={styles.image} src={image} alt="" />
+        <Image className={styles.image} width={147} height={120} src={image} alt="" />
       </div>
       <span className={styles.title}>{title}</span>
       <span className={titleTranslateStyles}>{titleTranslate}</span>

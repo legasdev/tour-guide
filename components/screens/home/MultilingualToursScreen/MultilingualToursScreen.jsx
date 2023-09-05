@@ -1,11 +1,10 @@
 import styles from "./MultilingualToursScreen.module.less";
 
-const multilingualToursScreenImage = "images/home/multilingual-tours.jpg";
-const articleImage = "images/home/translation.jpg";
+import multilingualToursScreenImage from "@images/home/multilingual-tours.jpg";
+import articleImage from "@images/home/translation.jpg";
 
-import { Article, ImageScreen } from "@components/shared";
+import {Article, DevicesKit, ImageScreen} from "@components/shared";
 import { BlurBlock } from "@components/common";
-import DevicesKit from "../../../shared/DevicesKit/DevicesKit";
 
 function MultilingualToursScreen() {
   return (

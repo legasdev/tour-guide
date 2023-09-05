@@ -1,6 +1,6 @@
 import { Article, PageBlock, DevicesKit } from "@components/shared";
 
-const articleImage = "images/home/excursions.jpg";
+import articleImage from "@images/home/excursions.jpg"
 
 function ExcursionsScreen() {
   return (

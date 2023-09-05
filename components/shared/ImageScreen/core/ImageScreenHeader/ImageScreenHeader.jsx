@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import styles from "./ImageScreenHeader.module.less";
 
 import { Title } from "@components/common";
+import Image from "next/image";
 
 function ImageScreenHeader({ title, translate, image }) {
   return (
-    <header
+    <div
       className={styles.header}
-      style={{ backgroundImage: `url(${image})` }}
     >
       <Title
         size={Title.sizes.h2}
@@ -18,7 +18,8 @@ function ImageScreenHeader({ title, translate, image }) {
       >
         {title}
       </Title>
-    </header>
+      <Image className={styles.image} src={image} alt="" fill />
+    </div>
   );
 }
 

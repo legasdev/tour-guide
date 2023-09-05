@@ -1,10 +1,10 @@
 import styles from "./SystemScreen.module.less";
 
-const guideSystemScreenImage = "images/home/guide-system.jpg";
+import guideSystemScreenImage from "@images/home/guide-system.jpg";
 
 import { ImageScreen } from "@components/shared";
 
-import { DevicesBlock, DevicesDescriptions } from "./core";
+import { DevicesBlock } from "./core";
 
 function SystemScreen() {
   return (

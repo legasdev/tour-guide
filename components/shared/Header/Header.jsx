@@ -1,12 +1,13 @@
 import { useState } from "react";
 import clsx from "clsx";
+import Image from "next/image"
 
 import styles from "./Header.module.less";
 
 import { Navigation } from "@components/common";
 import { CONTACTS } from "@constants/contacts";
 
-const logoImage = "images/logo/logo.svg";
+import logoImage from "@images/logo/logo.svg";
 
 function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,7 +39,7 @@ function Header() {
         </div>
         <div className={styles.wrapper}>
           <a href="/#" aria-label="Open home page">
-            <img src={logoImage} alt="" />
+            <Image src={logoImage} alt="" />
           </a>
           <Navigation
             withMobile

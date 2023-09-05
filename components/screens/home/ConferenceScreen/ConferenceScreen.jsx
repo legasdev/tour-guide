@@ -2,7 +2,7 @@ import { Article, PageBlock, DevicesKit } from "@components/shared";
 
 import styles from "./ConferenceScreen.module.less";
 
-const articleImage = "images/home/conference.jpg";
+import articleImage from "@images/home/conference.jpg";
 
 function ConferenceScreen() {
   return (

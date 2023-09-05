@@ -1,7 +1,7 @@
 const DEVICES_LIST = [
   {
     id: "transmitter",
-    image: "images/home/transmitter.png",
+    image: "/images/home/transmitter.png",
     label: "Guide Transmitter",
     labelTranslate: "Odašiljač Vodiča",
     description: "Our transmitter is designed to transmit a quality signal.",
@@ -10,7 +10,7 @@ const DEVICES_LIST = [
   },
   {
     id: "receiver",
-    image: "images/home/receiver.png",
+    image: "/images/home/receiver.png",
     label: "User Receiver",
     labelTranslate: "Korisnički Prijemnik",
     description: "Our guide receiver is designed to deliver exceptional sound.",
@@ -19,7 +19,7 @@ const DEVICES_LIST = [
   },
   {
     id: "headphones",
-    image: "images/home/headphones.png",
+    image: "/images/home/headphones.png",
     label: "Headphones",
     labelTranslate: "Slušalice",
     description: "Choose comfortable headphones for your tourists.",
@@ -27,7 +27,7 @@ const DEVICES_LIST = [
   },
   {
     id: "microphones",
-    image: "images/home/microphones.png",
+    image: "/images/home/microphones.png",
     label: "Microphones",
     labelTranslate: "Mikrofoni",
     description: "Select the appropriate microphone for the guide.",
@@ -35,7 +35,7 @@ const DEVICES_LIST = [
   },
   {
     id: "case",
-    image: "images/home/light-bag.png",
+    image: "/images/home/light-bag.png",
     label: "Equipment Case",
     labelTranslate: "Kučište za Prenos i Punjenje Opreme",
     description:

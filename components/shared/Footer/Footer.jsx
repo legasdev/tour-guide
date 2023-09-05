@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 import styles from "./Footer.module.less";
 
-const logoImage = "images/logo/logo.svg";
+import logoImage from "@images/logo/logo.svg";
 
 import { Navigation, Social } from "@components/common";
 
@@ -11,8 +13,8 @@ function Footer() {
     <footer className={styles.main}>
       <Navigation />
       <Social />
-      <a href="/#">
-        <img src={logoImage} alt="" />
+      <a href="/#" aria-label="Go to Home Page">
+        <Image src={logoImage} alt="" />
       </a>
       <span className={styles.copyright}>
         Monteniko d.o.o Tour guide system rental - Montenegro.

@@ -1,11 +1,12 @@
+import Image from "next/image";
+
 import styles from "./PromScreen.module.less";
 
 import { CONTACTS } from "@constants/contacts";
 import { Title } from "@components/common";
 import { Button } from "@components/ui/buttons";
 
-const promoImage = "images/home/promo.jpg";
-const promoImage2x = "images/home/promo-2x.jpg";
+import promoImage from "@images/home/promo.jpg"
 
 function PromoScreen() {
   return (
@@ -27,12 +28,7 @@ function PromoScreen() {
           </span>
         </div>
       </div>
-      <img
-        className={styles.promoImage}
-        src={promoImage}
-        srcSet={`${promoImage} 1x, ${promoImage2x} 2x`}
-        alt=""
-      />
+      <Image className={styles.promoImage} src={promoImage} alt="" priority />
       <Button.Group>
         <Button
           href={`mailto:${CONTACTS.email.value}`}

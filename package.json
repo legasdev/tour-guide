@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
+    "start": "next start",
     "build": "next build"
   },
   "repository": {
@@ -21,7 +22,8 @@
   "dependencies": {
     "next": "^13.2.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sharp": "0.32.5"
   },
   "devDependencies": {
     "clsx": "^1.2.1",

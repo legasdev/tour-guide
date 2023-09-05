@@ -9,6 +9,7 @@ function Social() {
         href="https://instagram.com/monteregion"
         target="_blank"
         rel="noopener"
+        aria-label="Link to Instagram account"
       >
         <IconInstagram />
       </a>

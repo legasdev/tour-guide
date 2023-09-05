@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import Image from "next/image";
 import clsx from "clsx";
 
 import styles from "./Article.module.less";
@@ -14,7 +15,7 @@ function Article({ image, title, titleTranslate, reverse = false, children }) {
     <article className={styles.main}>
       <div className={blockStyles}>
         <div className={styles.imageWrapper}>
-          <img className={styles.image} src={image} alt="" />
+          <Image className={styles.image} src={image} alt="" />
         </div>
         <div className={styles.titleBlock}>
           <Title
